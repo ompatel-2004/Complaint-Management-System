@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Admin/adminmenus/css/facility.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/facility.js"></script>
+    <script type="text/javascript" src="/Admin/adminheader/admin-common-header.js"></script>
+    <link rel="stylesheet" href="/Admin/adminheader/admin-common-header.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/category.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      header();
+    </script>
+
+    <div class="Facility-container">
+      <div class="Facility-head">
+        <h1>Facility Management</h1>
+      </div>
+      <br />
+
+      <div class="Facility-body">
+        <div class="Facility-input">
+          <input
+            type="number"
+            id="facilityNumber"
+            placeholder="Enter Facility Number"
+          />
+          <!-- Dropdown for facility selection -->
+          <select class="FacilitySelect">
+            <option>Choose Facility Name</option>
+            <option>Fan</option>
+            <option>Light</option>
+            <option>Basin</option>
+            <option>Wall</option>
+            <option>Door</option>
+            <option>Color</option>
+            <option>Bench</option>
+            <option>Pc</option>
+            <option>Wiring</option>
+            <option>Table</option>
+            <option>Chair</option>
+            <option>Router</option>
+          </select>
+          <!-- Dropdown for Category selection -->
+          <select id="CategorySelect">
+            <option value="" selected>Select Category Number</option>
+          </select>
+          <button onclick="return addFacility()">Add Facility</button>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="tbl-FacilityList">
+        <table id="FacilityTable">
+          <thead>
+            <tr class="trhead-table">
+              <th>Facility Number</th>
+              <th>Facility Name</th>
+              <th>Category Number</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="FacilityTableBody" class="tbody-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      displayFacilities();
+      // editFloor();
+    </script>
+  </body>
+</html>

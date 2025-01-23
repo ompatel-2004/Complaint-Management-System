@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Admin/adminmenus/css/status.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/status.js"></script>
+    <!-- <script type="text/javascript" src="/User/usermenus/js/user-add-complaint.js"></script> -->
+    <script type="text/javascript" src="/Admin/adminmenus/js/floor.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/class.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/category.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/facility.js"></script>
+    <script type="text/javascript" src="/Admin/adminheader/admin-common-header.js"></script>
+    <link rel="stylesheet" href="/Admin/adminheader/admin-common-header.css" />
+</head>
+<body>
+    <script type="text/javascript">
+        header();
+      </script>
+
+<div class="Status-container">
+    <div class="Status-head">
+      <h1>Status List</h1>
+    </div>
+    <br />
+
+    <div class="Status-body">
+      <div class="tbl-StatusList">
+        <table id="StatusTable">
+          <thead>
+            <tr class="trhead-table">
+              <th>Complaint Number</th>
+              <th>Email ID</th>
+              <th>Floor Number</th>
+              <th>Class Number</th>
+              <th>Category Number</th>
+              <th>Facility Number</th>
+              <th>Reason</th>
+              <th>Note</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="StatusTableBody" class="tbody-table"></tbody>
+        </table>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+  displayStatus();
+</script>
+
+</body>
+</html>

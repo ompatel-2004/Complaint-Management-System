@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Admin/adminmenus/css/category.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/category.js"></script>
+    <script type="text/javascript" src="/Admin/adminheader/admin-common-header.js"></script>
+    <link rel="stylesheet" href="/Admin/adminheader/admin-common-header.css" />
+    <!-- <script type="text/javascript" src="/Admin/adminmenus/js/floor.js"></script> -->
+  </head>
+  <body>
+    <script type="text/javascript">
+      header();
+      // displayCategories();
+    </script>
+
+    <div class="category-container">
+      <div class="category-head">
+        <h1>category Management</h1>
+      </div>
+      <br />
+
+      <div class="category-body">
+        <div class="category-input">
+          <input
+            type="number"
+            id="categoryNumber"
+            placeholder="Enter category Number"
+          />
+          <select class="CategorySelect">
+            <option>Choose Category</option>
+            <option>Electricity</option>
+            <option>Electronics</option>
+            <option>Furniture</option>
+            <option>Infrastructure</option>
+          </select>
+          <button onclick="return addCategory()">Add category</button>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="tbl-categoryList">
+        <table id="categoryTable">
+          <thead>
+            <tr class="trhead-table">
+              <th>Category Number</th>
+              <th>Category Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="CategoryTableBody" class="tbody-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      displayCategories();
+      // editFloor();
+    </script>
+  </body>
+</html>

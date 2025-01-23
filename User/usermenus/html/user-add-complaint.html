@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/User/usermenus/css/user-add-complaint.css" />
+    <script type="text/javascript" src="/User/usermenus/js/user-add-complaint.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/floor.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/class.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/category.js"></script>
+    <script type="text/javascript" src="/Admin/adminmenus/js/facility.js"></script>
+    <script type="text/javascript" src="/User/userheader/user-common-header.js"></script>
+    <link rel="stylesheet" href="/User/userheader/user-common-header.css" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      header();
+    </script>
+
+    <div class="AddComplaint-container">
+      <div class="AddComplaint-head">
+        <h1>Add Complaint</h1>
+      </div>
+      <br />
+<br><br>
+      <div class="AddComplaint-body">
+        <div class="AddComplaint-input">
+          <label for="addComplaintNumber">Complaint Number :</label>
+          <input
+            type="number"
+            id="addComplaintNumber"
+            placeholder="Enter Complaint Number"
+          />
+          <br><br><br>
+
+          <label for="email">Email-Id :</label>
+          <input
+          type="email"
+          id="email"
+          placeholder="email"
+          />
+          <br><br><br>
+          
+          <!-- Dropdown for Floor selection -->
+          <label for="floorNumber">Floor Number :</label>
+          <select id="FloorSelect" onchange="populateClassDropdown()">
+            <option value="" selected>Select Floor Number</option>
+          </select>
+          <br><br><br>
+          
+          <!-- Dropdown for Class selection -->
+          <label for="classNumber">Class Number :</label>
+          <select id="ClassSelect">
+            <option value="" selected>Select Class Number</option>
+          </select>
+          <br><br><br>
+          
+          <!-- Dropdown for Category selection -->
+          <label for="categoryNumber">Category Number :</label>
+          <select id="CategorySelect" onchange="populateFacilityDropdown()">
+            <option value="" selected>Select Category Number</option>
+          </select>
+          <br><br><br>
+          
+          <!-- Dropdown for Facility selection -->
+          <label for="facilityNumber">Facility Number :</label>
+          <select id="FacilitySelect">
+            <option value="" selected>Select Facility Number</option>
+          </select>
+          <br><br><br>
+          
+          <label for="Description">Description :</label>
+          <textarea type="text" name="" id="addComplaintDescription" cols="30" rows="3" placeholder="Write a Description"></textarea>
+          <br><br><br>
+          
+          <label for="note">note :</label>
+          <input
+            type="text"
+            id="note"
+            placeholder="Write a remark"
+          />
+          <!-- <br><br><br>
+
+          <input
+            type="hidden"
+            id="report"
+            placeholder="Status report"
+          /> -->
+          <br><br><br>
+
+          <button onclick="return userAddComplaint()">Add Complaint</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

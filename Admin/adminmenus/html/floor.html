@@ -1,0 +1,57 @@
+<!-- floor.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floor Management</title>
+    <link rel="stylesheet" href="/Admin/adminmenus/css/floor.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/floor.js"></script>
+    <script type="text/javascript" src="/Admin/adminheader/admin-common-header.js"></script>
+    <link rel="stylesheet" href="/Admin/adminheader/admin-common-header.css" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      header();
+    </script>
+
+    <div class="floor-container">
+      <div class="floor-head">
+        <h1>Floor Management</h1>
+      </div>
+      <br />
+
+      <div class="floor-body" action="/addFloor" method="post">
+        <!-- <div class="floor-body"> -->
+        <div class="floor-input">
+          <input
+            type="number"
+            id="floorNumber"
+            placeholder="Enter Floor Number"
+          />
+          <input type="text" id="floorName" placeholder="Enter Floor Name" />
+          <button onclick="return addFloor()">Add Floor</button>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="tbl-floorList">
+        <table id="floorTable">
+          <thead>
+            <tr class="trhead-table">
+              <th>Floor Number</th>
+              <th>Floor Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="floorTableBody" class="tbody-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      displayFloors();
+      // editFloor();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Admin/adminmenus/css/class.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/class.js"></script>
+    <script type="text/javascript" src="/Admin/adminheader/admin-common-header.js"></script>
+    <link rel="stylesheet" href="/Admin/adminheader/admin-common-header.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/floor.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      header();
+    </script>
+
+    <div class="Class-container">
+      <div class="Class-head">
+        <h1>Class Management</h1>
+      </div>
+      <br />
+
+      <div class="Class-body">
+        <div class="Class-input">
+          <input
+            type="number"
+            id="ClassNumber"
+            placeholder="Enter Class Number"
+          />
+          <input type="text" id="ClassName" placeholder="Enter Class Name" />
+          <!-- Dropdown for floor selection -->
+          <select id="FloorSelect">
+            <option value="" selected>Select Floor Number</option>
+          </select>
+          <button onclick="addClass()">Add Class</button>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="tbl-ClassList">
+        <table id="ClassTable">
+          <thead>
+            <tr class="trhead-table">
+              <th>Class Number</th>
+              <th>Class Name</th>
+              <th>Floor Number</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="ClassTableBody" class="tbody-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      displayclasses();
+      // editFloor();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin Management</title>
+    <link rel="stylesheet" href="/Admin/adminmenus/css/admin.css" />
+    <script type="text/javascript" src="/Admin/adminmenus/js/admin.js"></script>
+    <script type="text/javascript" src="/Admin/adminheader/admin-common-header.js"></script>
+    <link rel="stylesheet" href="/Admin/adminheader/admin-common-header.css" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      header();
+    </script>
+
+    <div class="admin-container">
+      <div class="admin-head">
+        <h1>admin Adding</h1>
+      </div>
+      <br />
+
+      <div class="admin-body" action="/addadmin" method="post">
+        <div class="admin-input">
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+          />
+          <input type="password" id="password" placeholder="Enter Password" />
+          <button onclick="return addAdmin()">Add admin</button>
+        </div>
+      </div>
+  </body>
+</html>
+

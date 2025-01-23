@@ -1,0 +1,158 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    /* position: fixed; */
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.2em;
+  }
+  
+  .admin-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .admin-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #555;
+  }
+  
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-profile span {
+    margin-right: 10px;
+  }
+  
+  .user-profile a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .menu {
+    list-style-type: none;
+    /* padding: 100px;   */
+    margin: 0%;
+    width: 200px;
+    /* background-color: skyblue; */
+    padding: 10px 20px;
+    padding-bottom: 100%;        
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  /* padding-top: 1000px; */
+  grid-area: sidebar;
+  margin-top: 85px;
+  padding: 10px 20px;
+  /* padding-bottom: 410px; */
+  height: 100%;
+  width: 200px;
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  /* padding-top: 20px; */
+  text-transform: uppercase;
+  justify-content: stretch;
+}
+
+.sidebar h2 {
+  color: white;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+  border: 1px solid white; /* Add white border to buttons */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.sidebar ul li a:hover {
+  background-color: red;
+}
+
+.sidebar ul li a.selected {
+  background-color: pink;
+  color: chartreuse;
+}
+
+.sidebar {
+  /* Specify the gradient */
+  background: linear-gradient(to bottom, #007bff, #74aeff);
+
+}

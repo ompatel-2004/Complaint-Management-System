@@ -1,0 +1,94 @@
+.category-container {
+    max-width: 960px;
+    margin-left: 240px;
+    padding-left: 20px;
+    padding-right: 200px;
+    padding-bottom: 375px;
+    text-align: center;
+    /* background-color: #007bff; */
+  justify-content: stretch;
+  }
+  
+  .category-head {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 170px;
+      text-transform: uppercase ;
+  
+    }
+    
+    .category-head h1 {
+      margin: auto;
+      padding: 10px;
+      background-color: dodgerblue;
+      border: 1px solid whitesmoke solid; 
+      /* border-radius: 250px;  */
+      border-bottom-left-radius: 250px;
+      border-bottom-right-radius: 250px;
+    }
+  
+    .category-input{
+      /* background-color: red; */
+      /* margin: auto; */
+      margin-left: 120px;
+      /* padding: 10px; */
+      /* width: 100%; */
+      /* width: 200px;
+      padding: 10px; */
+    }
+  
+    /* .trhead-table{
+      background-color: coral;
+      border-collapse: collapse;
+      text-transform: uppercase;
+    } */
+  
+    th {
+      /* width: 100%; */
+      font-size: 18px;
+      font-style: bold;
+      color: white;
+      /* display: flexbox; */
+      background-color: darkorchid; /* Light gray background color */
+      padding-left: 100px;
+      padding-right: 100px;
+      /* padding: 10px 20px; Padding around the content */
+      text-align: left; /* Left-align text */
+      /* border: 3px solid white; */
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .tbl-categoryList {
+      margin-left: -250px; /* Remove left margin */
+    }
+    
+  .tbody-table{
+    background-color: cornflowerblue;
+    /* margin: auto; */
+    margin-left: 300px;
+    /* padding: 10px; */
+    padding-top: 200px;
+    width: 40%;
+    font-size: 20px;
+    width: 100px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: burlywood; /* Light gray background color for even rows */
+  }
+  
+  
+  .tbl-categoryList table{
+    /* margin: auto; */
+    margin-left: 300px;
+    padding: 20px 40px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* padding-bottom: 20px 40px; */
+  
+    /* justify-content: space-between; */
+  
+  }
